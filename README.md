@@ -26,7 +26,6 @@ prometheus.yml: |
         replacement: ${1}:9101
 
 Создайте объекты для авторизации Prometheus сервера в Kubernetes-API.
-
 ---
 apiVersion: v1
 kind: ServiceAccount
