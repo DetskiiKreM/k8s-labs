@@ -24,14 +24,15 @@ prometheus.yml: |
         regex: (.+):(.+)
         target_label: __address__
         replacement: ${1}:9101
-
 Создайте объекты для авторизации Prometheus сервера в Kubernetes-API.
+
 ---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: prometheus
   namespace: default
+  
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
